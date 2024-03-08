@@ -6,10 +6,12 @@ const Footer = () => {
 	const year = new Date().getFullYear();
 
 	return (
-		<footer className='bg-gray-200 py-4 mt-auto'>
+		<footer className='bg-gray-200 py-4 mt-24'>
 			<div className='container mx-auto flex flex-col items-center justify-between px-4'>
 				<div className='my-2'>
-					<Image src={logo} alt='Next Horizons Logo' className='h-10 w-auto' />
+					<Link href='/'>
+						<Image src={logo} alt='Next Horizons Logo' className='h-10 w-auto' />
+					</Link>
 				</div>
 				<div className='flex flex-wrap justify-center md:justify-start mb-2'>
 					<ul className='flex space-x-4'>
