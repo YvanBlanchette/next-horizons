@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4619.14 1220">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: MontserratRoman-SemiBold, Montserrat;
+        font-size: 740px;
+        font-variation-settings: 'wght' 600;
+        font-weight: 600;
+        letter-spacing: -.04em;
+      }
+
+      .cls-3 {
+        fill: #d36900;
+      }
+
+      .cls-4 {
+        font-family: MontserratRoman-Bold, Montserrat;
+        font-size: 500px;
+        font-variation-settings: 'wght' 700;
+        font-weight: 700;
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="1866.6 0 1866.6 355.17 1918.31 288.81 1918.31 76.11 2516.23 76.11 2516.23 608.74 2567.94 608.74 2567.94 0 1866.6 0"/>
+  <g>
+    <path class="cls-3" d="m2314.62,327.31l-86-67.61-151.32-118.96-488.27,287.24v593.37h284.47v-77.95h-198.04v-473.2l394.32-231.97,158.84,124.88,86,67.62,60.74,47.75,56.8-58.75-117.54-92.4Z"/>
+    <text class="cls-3" transform="translate(1748.87 1021.34)"><tspan class="cls-2" x="0" y="0">H</tspan><tspan class="cls-4" x="569.8" y="0">ORIZONS</tspan></text>
+  </g>
+  <text class="cls-1" transform="translate(0 1028.34)"><tspan class="cls-2" x="0" y="0">N</tspan><tspan class="cls-4" x="569.8" y="0">EXT</tspan></text>
+</svg>
