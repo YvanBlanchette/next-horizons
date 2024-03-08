@@ -1,0 +1,346 @@
+[
+	{
+		"_id": "1",
+		"owner": "1",
+		"name": "Boston Commons",
+		"type": "Appartement",
+		"description": "Il s'agit d'un bel appartement situé près des communs. Il s'agit d'un appartement de 2 chambres avec une cuisine et une salle de bains complètes. Il est disponible à la location à la semaine ou au mois.",
+		"location": {
+			"street": "120 Tremont Street",
+			"city": "Boston",
+			"state": "MA",
+			"zipcode": "02108"
+		},
+		"beds": 2,
+		"baths": 1,
+		"square_feet": 1500,
+		"amenities": [
+			"Wifi",
+			"Cuisine complète",
+			"Laveuse et sécheuse",
+			"Stationnement gratuit",
+			"Bain à remous",
+			"Sécurité 24/7",
+			"Accessible aux personnes handicapées",
+			"Accès en ascenseur",
+			"Lave-vaisselle",
+			"Salle de sport/centre de remise en forme",
+			"Climatisation",
+			"Balcon/Patio",
+			"Télévision intelligente",
+			"Machine à café"
+		],
+		"rates": {
+			"weekly": 1100,
+			"monthly": 4200
+		},
+		"seller_info": {
+			"name": "Jean Dupont",
+			"email": "jean@gmail.com",
+			"phone": "617-555-5555"
+		},
+		"images": ["a1.jpg", "a2.jpg", "a3.jpg"],
+		"is_featured": false,
+		"createdAt": "2024-01-01T00:00:00.000Z",
+		"updatedAt": "2024-01-01T00:00:00.000Z"
+	},
+	{
+		"_id": "2",
+		"owner": "1",
+		"name": "Loft Confortable au Centre-Ville",
+		"type": "Appartement",
+		"description": "Un loft confortable en plein centre-ville avec une vue magnifique sur la ville.",
+		"location": {
+			"street": "45 Main Street",
+			"city": "New York",
+			"state": "NY",
+			"zipcode": "10001"
+		},
+		"beds": 1,
+		"baths": 1,
+		"square_feet": 1800,
+		"amenities": [
+			"Wifi",
+			"Cuisine complète",
+			"Laveuse et sécheuse",
+			"Stationnement gratuit",
+			"Bain à remous",
+			"Sécurité 24/7",
+			"Accessible aux personnes handicapées",
+			"Accès en ascenseur",
+			"Lave-vaisselle",
+			"Internet haut débit",
+			"Climatisation",
+			"Télévision intelligente",
+			"Grill/Barbecue extérieur"
+		],
+		"rates": {
+			"weekly": 1000,
+			"monthly": 4000
+		},
+		"seller_info": {
+			"name": "Jane Smith",
+			"email": "jane@gmail.com",
+			"phone": "212-555-5555"
+		},
+		"images": ["b1.jpg", "b2.jpg", "b3.jpg"],
+		"is_featured": false,
+		"createdAt": "2024-01-02T00:00:00.000Z",
+		"updatedAt": "2024-01-02T00:00:00.000Z"
+	},
+	{
+		"_id": "3",
+		"owner": "2",
+		"name": "Condo de Luxe avec Vue",
+		"type": "Condo",
+		"description": "Découvrez le luxe dans ce condo magnifique avec des vues à couper le souffle.",
+		"location": {
+			"street": "500 Lux Lane",
+			"city": "Los Angeles",
+			"state": "CA",
+			"zipcode": "90001"
+		},
+		"beds": 3,
+		"baths": 2,
+		"square_feet": 2200,
+		"amenities": [
+			"Wifi",
+			"Cuisine complète",
+			"Laveuse et sécheuse",
+			"Stationnement gratuit",
+			"Bain à remous",
+			"Sécurité 24/7",
+			"Accessible aux personnes handicapées",
+			"Accès en ascenseur",
+			"Lave-vaisselle",
+			"Piscine",
+			"Salle de sport/centre de remise en forme",
+			"Climatisation",
+			"Télévision intelligente",
+			"Machine à café"
+		],
+		"rates": {
+			"nightly": 200,
+			"weekly": 750,
+			"monthly": 3300
+		},
+		"seller_info": {
+			"name": "David Johnson",
+			"email": "david@gmail.com",
+			"phone": "213-555-5555"
+		},
+		"images": ["c1.jpg", "c2.jpg", "c3.jpg"],
+		"is_featured": false,
+		"createdAt": "2024-01-03T00:00:00.000Z",
+		"updatedAt": "2024-01-03T00:00:00.000Z"
+	},
+	{
+		"_id": "4",
+		"owner": "2",
+		"name": "Gîte Charmant en Pleine Nature",
+		"type": "Chalet",
+		"description": "Échappez-vous dans ce charmant gîte pour une Chalet paisible.",
+		"location": {
+			"street": "123 Countryside Lane",
+			"city": "Austin",
+			"state": "TX",
+			"zipcode": "78701"
+		},
+		"beds": 1,
+		"baths": 1,
+		"square_feet": 900,
+		"amenities": ["Cheminée", "Grill/Barbecue extérieur", "Balcon/Patio", "Machine à café"],
+		"rates": {
+			"weekly": 2000
+		},
+		"seller_info": {
+			"name": "Emily Davis",
+			"email": "emily@gmail.com",
+			"phone": "512-555-5555"
+		},
+		"images": ["d1.jpg", "d2.jpg", "d3.jpg"],
+		"is_featured": false,
+		"createdAt": "2024-01-04T00:00:00.000Z",
+		"updatedAt": "2024-01-04T00:00:00.000Z"
+	},
+	{
+		"_id": "5",
+		"owner": "3",
+		"name": "Studio Moderne en Centre-Ville",
+		"type": "Studio",
+		"description": "Séjournez avec style dans cet appartement studio moderne en plein centre-ville.",
+		"location": {
+			"street": "75 Urban Avenue",
+			"city": "Chicago",
+			"state": "IL",
+			"zipcode": "60601"
+		},
+		"beds": 1,
+		"baths": 1,
+		"square_feet": 900,
+		"amenities": ["Internet haut débit", "Télévision intelligente", "Climatisation", "Salle de sport/centre de remise en forme", "Grill/Barbecue extérieur"],
+		"rates": {
+			"weekly": 1100,
+			"monthly": 4200
+		},
+		"seller_info": {
+			"name": "Michael Brown",
+			"email": "michael@gmail.com",
+			"phone": "312-555-5555"
+		},
+		"images": ["e1.jpg", "e2.jpg", "e3.jpg"],
+		"is_featured": true,
+		"createdAt": "2024-01-05T00:00:00.000Z",
+		"updatedAt": "2024-01-05T00:00:00.000Z"
+	},
+	{
+		"_id": "6",
+		"owner": "3",
+		"name": "Maison en Bord de Mer",
+		"type": "Maison",
+		"description": "Échappez-vous dans cette maison en bord de mer pour des vacances relaxantes.",
+		"location": {
+			"street": "456 Oceanfront Drive",
+			"city": "Miami",
+			"state": "FL",
+			"zipcode": "33101"
+		},
+		"beds": 4,
+		"baths": 3,
+		"square_feet": 2800,
+		"amenities": ["Accès à la plage", "Piscine", "Balcon/Patio", "Télévision intelligente", "Grill/Barbecue extérieur"],
+		"rates": {
+			"nightly": 500,
+			"weekly": 2500
+		},
+		"seller_info": {
+			"name": "Sarah Wilson",
+			"email": "sarah@gmail.com",
+			"phone": "305-555-5555"
+		},
+		"images": ["f1.jpg", "f2.jpg", "f3.jpg"],
+		"is_featured": true,
+		"createdAt": "2024-01-06T00:00:00.000Z",
+		"updatedAt": "2024-01-06T00:00:00.000Z"
+	},
+	{
+		"_id": "7",
+		"owner": "4",
+		"name": "Chalet Rustique dans les Bois",
+		"type": "Chalet",
+		"description": "Vivez la nature dans cette Chalet rustique confortable.",
+		"location": {
+			"street": "789 Forest Lane",
+			"city": "Denver",
+			"state": "CO",
+			"zipcode": "80201"
+		},
+		"beds": 2,
+		"baths": 1,
+		"square_feet": 1100,
+		"amenities": ["Cheminée", "Grill/Barbecue extérieur", "Accès aux sentiers de randonnée", "Animaux acceptés"],
+		"rates": {
+			"nightly": 475,
+			"weekly": 2000
+		},
+		"seller_info": {
+			"name": "Robert Anderson",
+			"email": "robert@gmail.com",
+			"phone": "303-555-5555"
+		},
+		"images": ["g1.jpg", "g2.jpg", "g3.jpg"],
+		"is_featured": false,
+		"createdAt": "2024-01-07T00:00:00.000Z",
+		"updatedAt": "2024-01-07T00:00:00.000Z"
+	},
+	{
+		"_id": "8",
+		"owner": "5",
+		"name": "Chalet au Pied des Pistes",
+		"type": "Chalet",
+		"description": "Dévalez les pentes depuis ce chalet confortable au pied des pistes.",
+		"location": {
+			"street": "321 Mountain Road",
+			"city": "Aspen",
+			"state": "CO",
+			"zipcode": "81611"
+		},
+		"beds": 3,
+		"baths": 2,
+		"square_feet": 1800,
+		"amenities": ["Stockage d'équipement de ski", "Cheminée", "Balcon/Patio", "Télévision intelligente"],
+		"rates": {
+			"nightly": 300,
+			"weekly": 1100
+		},
+		"seller_info": {
+			"name": "Jennifer Martin",
+			"email": "jennifer@gmail.com",
+			"phone": "970-555-5555"
+		},
+		"images": ["h1.jpg", "h2.jpg", "h3.jpg"],
+		"is_featured": false,
+		"createdAt": "2024-01-08T00:00:00.000Z",
+		"updatedAt": "2024-01-08T00:00:00.000Z"
+	},
+	{
+		"_id": "9",
+		"owner": "6",
+		"name": "Chalet avec Vue sur la Montagne",
+		"type": "Maison",
+		"description": "Profitez de vues imprenables sur la montagne depuis ce chalet de style suédois spacieux.",
+		"location": {
+			"street": "600 Summit Drive",
+			"city": "Boulder",
+			"state": "CO",
+			"zipcode": "80301"
+		},
+		"beds": 4,
+		"baths": 3,
+		"square_feet": 2400,
+		"amenities": ["Vue sur la montagne", "Accès aux sentiers de randonnée", "Climatisation", "Télévision intelligente", "Grill/Barbecue extérieur"],
+		"rates": {
+			"weekly": 1000,
+			"monthly": 3800
+		},
+		"seller_info": {
+			"name": "Lisa Taylor",
+			"email": "lisa@gmail.com",
+			"phone": "303-555-5555"
+		},
+		"images": ["i1.jpg", "i2.jpg", "i3.jpg"],
+		"is_featured": false,
+		"createdAt": "2024-01-09T00:00:00.000Z",
+		"updatedAt": "2024-01-09T00:00:00.000Z"
+	},
+	{
+		"_id": "10",
+		"owner": "7",
+		"name": "Loft Historique en Centre-Ville",
+		"type": "Appartement",
+		"description": "Remontez dans le temps avec un séjour dans ce loft historique en plein centre-ville.",
+		"location": {
+			"street": "123 History Lane",
+			"city": "Philadelphia",
+			"state": "PA",
+			"zipcode": "19101"
+		},
+		"beds": 2,
+		"baths": 1,
+		"square_feet": 1200,
+		"amenities": ["Internet haut débit", "Climatisation", "Télévision intelligente", "Machine à café"],
+		"rates": {
+			"weekly": 550,
+			"monthly": 2100
+		},
+		"seller_info": {
+			"name": "Matthew Harris",
+			"email": "matthew@gmail.com",
+			"phone": "215-555-5555"
+		},
+		"images": ["j1.jpg", "j2.jpg", "j3.jpg"],
+		"is_featured": false,
+		"createdAt": "2024-01-10T00:00:00.000Z",
+		"updatedAt": "2024-01-10T00:00:00.000Z"
+	}
+]

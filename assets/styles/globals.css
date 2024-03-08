@@ -1,3 +1,273 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+:root {
+  /* COLORS */
+  --clr-marine-90: hsl(219, 62%, 95%);
+  --clr-marine-80: hsl(219, 62%, 90%);
+  --clr-marine-70: hsl(219, 62%, 70%);
+  --clr-marine-60: hsl(219, 62%, 60%);
+  --clr-marine-50: hsl(219, 62%, 50%);
+  --clr-marine-40: hsl(219, 62%, 40%);
+  --clr-marine-30: hsl(219, 62%, 30%);
+  --clr-marine-20: hsl(219, 62%, 20%);
+  --clr-marine-10: hsl(219, 62%, 10%);
+
+  --clr-limeGreen-90: hsl(66, 71%, 90%);
+  --clr-limeGreen-80: hsl(66, 71%, 80%);
+  --clr-limeGreen-70: hsl(66, 71%, 70%);
+  --clr-limeGreen-60: hsl(66, 71%, 60%);
+  --clr-limeGreen-50: hsl(66, 71%, 50%);
+  --clr-limeGreen-40: hsl(66, 71%, 40%);
+  --clr-limeGreen-30: hsl(66, 71%, 30%);
+  --clr-limeGreen-20: hsl(66, 71%, 50%);
+  --clr-limeGreen-10: hsl(66, 71%, 10%);
+}
+
+
+/* ------------------- */
+/* !---> UTILITY <---! */
+/* ------------------- */
+
+/* TYPOGRAPHY */
+.bg-marine-100 {
+  background-color: var(--clr-marine-90);
+}
+
+.bg-marine-200 {
+  background-color: var(--clr-marine-80);
+}
+
+.bg-marine-300 {
+  background-color: var(--clr-marine-70);
+}
+
+.bg-marine-400 {
+  background-color: var(--clr-marine-60);
+}
+
+.bg-marine-500 {
+  background-color: var(--clr-marine-50);
+}
+
+.bg-marine-600 {
+  background-color: var(--clr-marine-40);
+}
+
+.bg-marine-700 {
+  background-color: var(--clr-marine-30);
+}
+
+.bg-marine-800 {
+  background-color: var(--clr-marine-20);
+}
+
+.bg-marine-900 {
+  background-color: var(--clr-marine-10);
+}
+
+.hover-bg-marine-100:hover {
+  background-color: var(--clr-marine-90);
+}
+
+.hover-bg-marine-200:hover {
+  background-color: var(--clr-marine-80);
+}
+
+.hover-bg-marine-300:hover {
+  background-color: var(--clr-marine-70);
+}
+
+.hover-bg-marine-400:hover {
+  background-color: var(--clr-marine-60);
+}
+
+.hover-bg-marine-500:hover {
+  background-color: var(--clr-marine-50);
+}
+
+.hover-bg-marine-600:hover {
+  background-color: var(--clr-marine-40);
+}
+
+.hover-bg-marine-700:hover {
+  background-color: var(--clr-marine-30);
+}
+
+.hover-bg-marine-800:hover {
+  background-color: var(--clr-marine-20);
+}
+
+.hover-bg-marine-900:hover {
+  background-color: var(--clr-marine-10);
+}
+
+.border-marine-100 {
+  border-color: var(--clr-marine-90);
+}
+
+.border-marine-200 {
+  border-color: var(--clr-marine-80);
+}
+
+.border-marine-300 {
+  border-color: var(--clr-marine-70);
+}
+
+.border-marine-400 {
+  border-color: var(--clr-marine-60);
+}
+
+.border-marine-500 {
+  border-color: var(--clr-marine-50);
+}
+
+.border-marine-600 {
+  border-color: var(--clr-marine-40);
+}
+
+.border-marine-700 {
+  border-color: var(--clr-marine-30);
+}
+
+.border-marine-800 {
+  border-color: var(--clr-marine-20);
+}
+
+.border-marine-900 {
+  border-color: var(--clr-marine-10);
+}
+
+.text-marine-100 {
+  color: var(--clr-marine-90);
+}
+
+.text-marine-200 {
+  color: var(--clr-marine-80);
+}
+
+.text-marine-300 {
+  color: var(--clr-marine-70);
+}
+
+.text-marine-400 {
+  color: var(--clr-marine-60);
+}
+
+.text-marine-500 {
+  color: var(--clr-marine-50);
+}
+
+.hover-text-marine-500:hover {
+  color: var(--clr-marine-50);
+}
+
+.text-marine-600 {
+  color: var(--clr-marine-40);
+}
+
+.text-marine-700 {
+  color: var(--clr-marine-30);
+}
+
+.text-marine-800 {
+  color: var(--clr-marine-20);
+}
+
+.text-marine-900 {
+  color: var(--clr-marine-10);
+}
+
+.bg-limeGreen-100 {
+  background-color: var(--clr-limeGreen-90);
+}
+
+.bg-limeGreen-200 {
+  background-color: var(--clr-limeGreen-80);
+}
+
+.bg-limeGreen-300 {
+  background-color: var(--clr-limeGreen-70);
+}
+
+.bg-limeGreen-400 {
+  background-color: var(--clr-limeGreen-60);
+}
+
+.bg-limeGreen-500 {
+  background-color: var(--clr-limeGreen-50);
+}
+
+.bg-limeGreen-600 {
+  background-color: var(--clr-limeGreen-40);
+}
+
+.hover-bg-limeGreen-600:hover {
+  background-color: var(--clr-limeGreen-40);
+}
+
+.bg-limeGreen-700 {
+  background-color: var(--clr-limeGreen-30);
+}
+
+.bg-limeGreen-800 {
+  background-color: var(--clr-limeGreen-20);
+}
+
+.bg-limeGreen-900 {
+  background-color: var(--clr-limeGreen-10);
+}
+
+.text-limeGreen-100 {
+  color: var(--clr-limeGreen-90);
+}
+
+.text-limeGreen-200 {
+  color: var(--clr-limeGreen-80);
+}
+
+.text-limeGreen-300 {
+  color: var(--clr-limeGreen-70);
+}
+
+.text-limeGreen-400 {
+  color: var(--clr-limeGreen-60);
+}
+
+.text-limeGreen-500 {
+  color: var(--clr-limeGreen-50);
+}
+
+.text-limeGreen-600 {
+  color: var(--clr-limeGreen-40);
+}
+
+.text-limeGreen-700 {
+  color: var(--clr-limeGreen-30);
+}
+
+.text-limeGreen-800 {
+  color: var(--clr-limeGreen-20);
+}
+
+.text-limeGreen-900 {
+  color: var(--clr-limeGreen-10);
+}
+
+.ff-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/* ---------------------- */
+/* !---> COMPONENTS <---! */
+/* ---------------------- */
+
+.btn:active {
+  transform: scale(0.98);
+}

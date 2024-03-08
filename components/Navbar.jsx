@@ -3,9 +3,9 @@ import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '@/assets/images/logo-white.png';
+import logo from '@/assets/images/logo-white.svg';
 import profileDefault from '@/assets/images/profile.png';
-import { FaGoogle } from 'react-icons/fa';
+import { FaGoogle, FaUser } from 'react-icons/fa6';
 
 const Navbar = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ const Navbar = () => {
 	const pathname = usePathname();
 
 	return (
-		<nav className='bg-blue-700 border-b border-blue-500'>
+		<nav className='bg-marine-800 border-b border-marine-700'>
 			<div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
 				<div className='relative flex h-20 items-center justify-between'>
 					<div className='absolute inset-y-0 left-0 flex items-center md:hidden'>
@@ -23,7 +23,7 @@ const Navbar = () => {
 						<button
 							type='button'
 							id='mobile-dropdown-button'
-							className='relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none transition duration-300'
+							className='relative inline-flex items-center justify-center rounded-md p-2 text-gray-400  hover:text-white focus:outline-none transition duration-300'
 							aria-controls='mobile-menu'
 							aria-expanded='false'
 							onClick={() => setIsMobileMenuOpen((prev) => !prev)}
@@ -36,27 +36,32 @@ const Navbar = () => {
 						</button>
 					</div>
 
-					<div className='flex flex-1 items-center justify-center md:items-stretch md:justify-start'>
+					<div className='flex flex-1 items-center justify-center md:justify-start'>
 						{/* <!-- Logo --> */}
-						<Link className='flex flex-shrink-0 items-center' href='/'>
-							<Image className='h-10 w-auto' src={logo} alt='PropertyPulse' />
+						<Link className='flex items-center' href='/'>
+							<Image className='h-12 w-auto' src={logo} alt='PropertyPulse' />
 
-							<span className='hidden md:block text-white text-2xl font-bold ml-2'>NextHorizons</span>
+							<span className='text-white text-2xl font-extrabold ml-2 ff-montserrat pt-2'>
+								<span className='font-medium text-limeGreen-500'>Next</span>Horizons
+							</span>
 						</Link>
+
 						{/* <!-- Desktop Menu Hidden below md screens --> */}
-						<div className='hidden md:ml-6 md:block'>
+						<div className='hidden md:ml-6 md:block pt-2'>
 							<div className='flex space-x-2'>
 								<Link
 									href='/'
-									className={`${pathname === '/' ? 'bg-black' : ''} text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 transition duration-300`}
+									className={`${
+										pathname === '/' ? 'bg-limeGreen-600' : ''
+									} text-white hover-bg-limeGreen-600 hover:text-white rounded-none px-3 py-2 transition duration-300`}
 								>
 									Accueil
 								</Link>
 								<Link
 									href='/properties'
 									className={`${
-										pathname === '/properties' ? 'bg-black' : ''
-									} text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 transition duration-300`}
+										pathname === '/properties' ? 'bg-limeGreen-600' : ''
+									} text-white hover-bg-limeGreen-600 hover:text-white rounded-none px-3 py-2 transition duration-300`}
 								>
 									Propriétés
 								</Link>
@@ -64,8 +69,8 @@ const Navbar = () => {
 									<Link
 										href='/properties/add'
 										className={`${
-											pathname === '/properties/add' ? 'bg-black' : ''
-										} text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 transition duration-300`}
+											pathname === '/properties/add' ? 'bg-limeGreen-600' : ''
+										} text-white hover-bg-limeGreen-600 hover:text-white rounded-none px-3 py-2 transition duration-300`}
 									>
 										Ajouter une Propriété
 									</Link>
@@ -77,8 +82,8 @@ const Navbar = () => {
 					{/* <!-- Right Side Menu (Logged Out) --> */}
 					{!isLoggedIn && (
 						<div className='hidden md:block md:ml-6'>
-							<div className='flex items-center'>
-								<button className='flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2'>
+							<div className='flex items-center pt-2'>
+								<button className='btn flex items-center text-white bg-marine-700 hover-bg-marine-600 hover:text-white rounded-none px-3 py-2 transition duration-300'>
 									<FaGoogle className='text-white mr-2' />
 									<span>Connextion / Inscription</span>
 								</button>
@@ -160,7 +165,7 @@ const Navbar = () => {
 							href='/'
 							className={`${
 								pathname === '/' ? 'bg-black' : ''
-							} text-white block hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 transition duration-300`}
+							} text-white block hover:bg-gray-900 hover:text-white rounded-none px-3 py-2 transition duration-300`}
 						>
 							Accueil
 						</Link>
@@ -168,7 +173,7 @@ const Navbar = () => {
 							href='/properties'
 							className={`${
 								pathname === '/properties' ? 'bg-black' : ''
-							} text-white block hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 transition duration-300`}
+							} text-white block hover:bg-gray-900 hover:text-white rounded-none px-3 py-2 transition duration-300`}
 						>
 							Propriétés
 						</Link>
@@ -177,15 +182,20 @@ const Navbar = () => {
 								href='/properties/add'
 								className={`${
 									pathname === '/properties/add' ? 'bg-black' : ''
-								} text-white block hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 transition duration-300`}
+								} text-white block hover:bg-gray-900 hover:text-white rounded-none px-3 py-2 transition duration-300`}
 							>
 								Ajouter une Propriété
 							</Link>
 						)}
-						<button className='flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2 my-4'>
-							<FaGoogle className='text-white mr-2' />
-							<span>Connexion / Inscription</span>
-						</button>
+						<Link
+							href='/login'
+							className={`${
+								pathname === '/login' ? 'bg-black' : ''
+							} text-white block hover:bg-gray-900 hover:text-white rounded-none px-3 py-2 transition duration-300 flex items-center`}
+						>
+							<FaGoogle className='text-white mr-3' />
+							<span>Connextion / Inscription</span>
+						</Link>
 					</div>
 				</div>
 			)}
