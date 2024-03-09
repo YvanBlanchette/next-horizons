@@ -15,7 +15,7 @@ const Navbar = () => {
 	const pathname = usePathname();
 
 	return (
-		<nav className='bg-marine-800 border-b border-marine-700'>
+		<nav className='bg-marine-800 border-b border-limeGreen-500'>
 			<div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
 				<div className='relative flex h-20 items-center justify-between'>
 					<div className='absolute inset-y-0 left-0 flex items-center md:hidden'>
@@ -164,16 +164,16 @@ const Navbar = () => {
 						<Link
 							href='/'
 							className={`${
-								pathname === '/' ? 'bg-black' : ''
-							} text-white block hover:bg-gray-900 hover:text-white rounded-none px-3 py-2 transition duration-300`}
+								pathname === '/' ? 'bg-marine-900' : ''
+							} text-white block hover-bg-marine-900 hover:text-white rounded-none px-3 py-2 transition duration-300`}
 						>
 							Accueil
 						</Link>
 						<Link
 							href='/properties'
 							className={`${
-								pathname === '/properties' ? 'bg-black' : ''
-							} text-white block hover:bg-gray-900 hover:text-white rounded-none px-3 py-2 transition duration-300`}
+								pathname === '/properties' ? 'bg-marine-900' : ''
+							} text-white block hover-bg-marine-900 hover:text-white rounded-none px-3 py-2 transition duration-300`}
 						>
 							Propriétés
 						</Link>
@@ -181,8 +181,8 @@ const Navbar = () => {
 							<Link
 								href='/properties/add'
 								className={`${
-									pathname === '/properties/add' ? 'bg-black' : ''
-								} text-white block hover:bg-gray-900 hover:text-white rounded-none px-3 py-2 transition duration-300`}
+									pathname === '/properties/add' ? 'bg-marine-900' : ''
+								} text-white block hover-bg-marine-900 hover:text-white rounded-none px-3 py-2 transition duration-300`}
 							>
 								Ajouter une Propriété
 							</Link>
@@ -190,8 +190,8 @@ const Navbar = () => {
 						<Link
 							href='/login'
 							className={`${
-								pathname === '/login' ? 'bg-black' : ''
-							} text-white block hover:bg-gray-900 hover:text-white rounded-none px-3 py-2 transition duration-300 flex items-center`}
+								pathname === '/login' ? 'bg-marine-900' : ''
+							} text-white block hover:opacity-80 hover:text-white rounded-none px-3 py-2 transition duration-300 flex items-center`}
 						>
 							<FaGoogle className='text-white mr-3' />
 							<span>Connextion / Inscription</span>

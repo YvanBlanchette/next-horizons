@@ -43,7 +43,7 @@ const PropertyCard = ({ _id, images, type, name, location, beds, baths, square_f
 					</p>
 				</div>
 
-				<div className='border border-gray-100 mb-5'></div>
+				<div className='border border-gray-200 mb-5'></div>
 
 				<div className='flex flex-col lg:flex-row justify-between mb-4'>
 					<div className='flex align-middle justify-center md:justify-start gap-2 mb-4 lg:mb-0 items-center'>
