@@ -15,7 +15,9 @@ const PropertyCard = ({ _id, images, type, name, location, beds, baths, square_f
 
 	return (
 		<div className='rounded-none bg-white shadow-md relative'>
-			<Image src={`/images/${images[0]}`} alt={name} className='w-full h-auto rounded-none' sizes='100vw' width={0} height={0} />
+			<Link href={`/properties/${_id}`}>
+				<Image src={`/images/${images[0]}`} alt={name} className='w-full h-auto rounded-none object-cover' sizes='100vw' width={0} height={0} />
+			</Link>
 			<div className='p-4'>
 				<div className='text-center mb-6'>
 					<div className='text-gray-600'>{type}</div>
@@ -47,13 +49,13 @@ const PropertyCard = ({ _id, images, type, name, location, beds, baths, square_f
 
 				<div className='flex flex-col lg:flex-row justify-between mb-4'>
 					<div className='flex align-middle justify-center md:justify-start gap-2 mb-4 lg:mb-0 items-center'>
-						<FaLocationDot className='fa-solid fa-location-dot text-lg text-limeGreen-500' />
-						<span className='text-xl font-semibold text-limeGreen-500'>
+						<FaLocationDot className='fa-solid fa-location-dot text-lg text-limeGreen-600' />
+						<span className='text-xl font-semibold text-limeGreen-600'>
 							{location.city}, {location.state}
 						</span>
 					</div>
 					<Link
-						href={`/property/{_id}`}
+						href={`/properties/${_id}`}
 						className='h-[40px] bg-marine-700 hover-bg-marine-600 text-white px-4 py-2 rounded-none text-center text-md transition duration-300'
 					>
 						Détails

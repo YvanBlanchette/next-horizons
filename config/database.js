@@ -7,7 +7,7 @@ const connectDB = async () => {
 
   // If the connection is already open, return the existing connection
   if (connected) {
-    console.log('MongoDB is already connected...');
+    console.log('MongoDB est déjà connecté...');
     return;
   }
 
@@ -17,9 +17,9 @@ const connectDB = async () => {
     // Connect to the MongoDB database
     await mongoose.connect(process.env.MONGODB_URI);
     connected = true;
-    console.log('MongoDB is connected...');
+    console.log('MongoDB est maintenant conecté...');
   } catch (e) {
-    console.error('Error connecting to MongoDB: ', e);
+    console.error('Erreur de connection à MongoDB: ', e);
   }
 }
 
