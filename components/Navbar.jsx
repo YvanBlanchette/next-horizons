@@ -19,8 +19,10 @@ const Navbar = () => {
 	useEffect(() => {
 		const setAuthProviders = async () => {
 			const response = await getProviders();
+
 			setProviders(response);
 		};
+
 		setAuthProviders();
 	}, []);
 
@@ -94,10 +96,10 @@ const Navbar = () => {
 						<div className='hidden md:block md:ml-6'>
 							<div className='flex items-center pt-2'>
 								{providers &&
-									Object.values(providers).map((provider, index) => (
+									Object.values(providers).map((provider) => (
 										<button
 											onClick={() => signIn(provider.id)}
-											key={index}
+											key={provider.name}
 											className='btn flex items-center text-white bg-limeGreen-600 hover:opacity-75 hover:text-white rounded-none px-3 py-2 transition duration-300'
 										>
 											<FaGoogle className='text-white mr-2' />
@@ -204,17 +206,23 @@ const Navbar = () => {
 								Ajouter une Propriété
 							</Link>
 						)}
-						{providers &&
-							Object.values(providers).map((provider, index) => (
-								<button
-									onClick={() => signIn(provider.id)}
-									key={index}
-									className='btn flex items-center text-white bg-limeGreen-600 hover:opacity-75 hover:text-white rounded-none px-3 py-2 transition duration-300'
-								>
-									<FaGoogle className='text-white mr-2' />
-									<span>Connextion / Inscription</span>
-								</button>
-							))}
+						{!session && (
+							<div className='block sm:ml-1'>
+								<div className='flex items-center'>
+									{providers &&
+										Object.values(providers).map((provider) => (
+											<button
+												onClick={() => signIn(provider.id)}
+												key={provider.name}
+												className='btn flex items-center text-white bg-limeGreen-600 hover:opacity-75 hover:text-white rounded-none px-3 py-2 transition duration-300'
+											>
+												<FaGoogle className='text-white mr-2' />
+												<span>Connextion / Inscription</span>
+											</button>
+										))}
+								</div>
+							</div>
+						)}
 					</div>
 				</div>
 			)}
